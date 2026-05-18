@@ -2,7 +2,7 @@
 
 A PowerShell detection script for **Microsoft Intune** that validates whether Microsoft Defender for Endpoint (MDE) is correctly onboarded and healthy on a Windows device.
 
-Designed to be used as an **Intune Custom Compliance** or **Proactive Remediation** detection script.
+Designed to be used as **Proactive Remediation** detection script.
 
 ---
 
@@ -151,13 +151,6 @@ Hint entries (`[WARN]HintXxx=...`) provide machine-readable remediation context 
 ---
 
 ## Deployment – Intune
-
-### As a Custom Compliance Script
-
-1. In Intune, go to **Devices → Compliance → Scripts**.
-2. Upload `MDE-Readiness-Detection.ps1` as a **detection script**.
-3. Create a corresponding **JSON compliance rule** that checks the output string for `RESULT=COMPLIANT`.
-4. Assign to a device group.
 
 ### As a Proactive Remediation
 
